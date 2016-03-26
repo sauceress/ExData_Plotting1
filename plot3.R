@@ -18,7 +18,7 @@ png("plot3.png", width=480, height=480)
 
 with (data, {
   plot(data$DateTime, data$Sub_metering_1,  type = "l", 
-       ylab = "Global Active Power (kilowatts)", xlab = "")
+       ylab = "Energy Sub Metering", xlab = "")
   lines(data$DateTime, data$Sub_metering_2, col = 'Red')
   lines(data$DateTime, data$Sub_metering_3, col = 'Blue')
 })
